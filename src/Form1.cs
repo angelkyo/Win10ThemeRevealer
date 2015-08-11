@@ -24,8 +24,8 @@ namespace Win10ThemeRevealer
         {
             if (Environment.OSVersion.Version.Build < 10240)
             {
-                MessageBox.Show("This program is designed for Windows 10 (Build 10240) or later only!"
-                   , "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("这一方案是专为Windows10（Build 10240）或更高版本！"
+                   , "错误！", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             Win32.SetFormIcon(this.Handle, Application.ExecutablePath);
         }
@@ -51,7 +51,7 @@ namespace Win10ThemeRevealer
             }
             catch (IOException)
             {
-                MessageBox.Show("Cannot write to " + WowThemeFileName + ".msstyles!", "Error!",
+                MessageBox.Show("不能写入 " + WowThemeFileName + ".msstyles!", "错误！",
                     MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
@@ -65,7 +65,7 @@ namespace Win10ThemeRevealer
                 .Replace("#THEME_NAME", LiteThemeName)
                 .Replace("#THEME_FILENAME", LiteThemeFileName));
             // Done!
-            MessageBox.Show("Done! Select your favorite theme now. :D ","OK!",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("完成！现在选择你喜欢的主题。 ", "OK!",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private void btnTryWindowsColorRevived_Click(object sender, EventArgs e)
@@ -82,7 +82,7 @@ namespace Win10ThemeRevealer
         {
             // Switch default theme
             OpenTheme(ThemesPath + "\\aero.theme");
-            MessageBox.Show("Press OK when Windows has reverted to its default theme.","Just one more click");
+            MessageBox.Show("Windows已经恢复到其默认的主题。", "完成！");
             // Delete the wow theme
             File.Delete(ThemesPath + "\\" + LiteThemeFileName + ".theme");
             File.Delete(ThemesPath + "\\" + WowThemeFileName + ".theme");
@@ -98,7 +98,7 @@ namespace Win10ThemeRevealer
 
         private void lnkHomepage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("http://raymai97.github.io/Win10ThemeRevealer");
+            Process.Start("https://github.com/angelkyo/Win10ThemeRevealer");
         }
 
         void OpenTheme(string themePath)
@@ -109,7 +109,7 @@ namespace Win10ThemeRevealer
             }
             else
             {
-                MessageBox.Show(themePath, "Theme is not exist!",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show(themePath, "主题不存在！", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 

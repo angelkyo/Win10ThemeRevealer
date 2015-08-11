@@ -47,9 +47,9 @@
             this.lblTitle.Location = new System.Drawing.Point(12, 12);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(3);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(304, 21);
+            this.lblTitle.Size = new System.Drawing.Size(273, 21);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Try out the hidden themes in Windows 10!";
+            this.lblTitle.Text = "尝试隐藏的主题，For Windows10！";
             // 
             // lblStep1
             // 
@@ -57,9 +57,9 @@
             this.lblStep1.Location = new System.Drawing.Point(69, 73);
             this.lblStep1.Margin = new System.Windows.Forms.Padding(3);
             this.lblStep1.Name = "lblStep1";
-            this.lblStep1.Size = new System.Drawing.Size(42, 15);
+            this.lblStep1.Size = new System.Drawing.Size(52, 15);
             this.lblStep1.TabIndex = 1;
-            this.lblStep1.Text = "Step 1:";
+            this.lblStep1.Text = "步骤1：";
             // 
             // btnReveal
             // 
@@ -68,7 +68,7 @@
             this.btnReveal.Name = "btnReveal";
             this.btnReveal.Size = new System.Drawing.Size(200, 30);
             this.btnReveal.TabIndex = 0;
-            this.btnReveal.Text = "Reveal!";
+            this.btnReveal.Text = "显示！";
             this.btnReveal.UseVisualStyleBackColor = true;
             this.btnReveal.Click += new System.EventHandler(this.btnReveal_Click);
             // 
@@ -78,9 +78,9 @@
             this.lblStep2.Location = new System.Drawing.Point(69, 109);
             this.lblStep2.Margin = new System.Windows.Forms.Padding(3);
             this.lblStep2.Name = "lblStep2";
-            this.lblStep2.Size = new System.Drawing.Size(42, 15);
+            this.lblStep2.Size = new System.Drawing.Size(52, 15);
             this.lblStep2.TabIndex = 1;
-            this.lblStep2.Text = "Step 2:";
+            this.lblStep2.Text = "步骤2：";
             // 
             // btnTryWindowsColorRevived
             // 
@@ -89,7 +89,7 @@
             this.btnTryWindowsColorRevived.Name = "btnTryWindowsColorRevived";
             this.btnTryWindowsColorRevived.Size = new System.Drawing.Size(200, 30);
             this.btnTryWindowsColorRevived.TabIndex = 1;
-            this.btnTryWindowsColorRevived.Text = "Try \"Windows Color Revived\"";
+            this.btnTryWindowsColorRevived.Text = "Windows Color Revived 主题";
             this.btnTryWindowsColorRevived.UseVisualStyleBackColor = true;
             this.btnTryWindowsColorRevived.Click += new System.EventHandler(this.btnTryWindowsColorRevived_Click);
             // 
@@ -99,9 +99,9 @@
             this.lblDoneWithIt.Location = new System.Drawing.Point(70, 192);
             this.lblDoneWithIt.Margin = new System.Windows.Forms.Padding(3);
             this.lblDoneWithIt.Name = "lblDoneWithIt";
-            this.lblDoneWithIt.Size = new System.Drawing.Size(93, 15);
+            this.lblDoneWithIt.Size = new System.Drawing.Size(85, 15);
             this.lblDoneWithIt.TabIndex = 1;
-            this.lblDoneWithIt.Text = "I\'m done with it:";
+            this.lblDoneWithIt.Text = "恢复默认主题";
             // 
             // btnRestoreSystemDefault
             // 
@@ -110,7 +110,7 @@
             this.btnRestoreSystemDefault.Name = "btnRestoreSystemDefault";
             this.btnRestoreSystemDefault.Size = new System.Drawing.Size(258, 30);
             this.btnRestoreSystemDefault.TabIndex = 3;
-            this.btnRestoreSystemDefault.Text = "Restore system default";
+            this.btnRestoreSystemDefault.Text = "恢复系统默认主题";
             this.btnRestoreSystemDefault.UseVisualStyleBackColor = true;
             this.btnRestoreSystemDefault.Click += new System.EventHandler(this.btnRestoreSystemDefault_Click);
             // 
@@ -121,20 +121,20 @@
             this.btnTryWindowsLite.Name = "btnTryWindowsLite";
             this.btnTryWindowsLite.Size = new System.Drawing.Size(200, 30);
             this.btnTryWindowsLite.TabIndex = 2;
-            this.btnTryWindowsLite.Text = "Try \"Windows Lite\"";
+            this.btnTryWindowsLite.Text = "Windows Lite 主题";
             this.btnTryWindowsLite.UseVisualStyleBackColor = true;
             this.btnTryWindowsLite.Click += new System.EventHandler(this.btnTryWindowsLite_Click);
             // 
             // lnkHomepage
             // 
             this.lnkHomepage.AutoSize = true;
-            this.lnkHomepage.Location = new System.Drawing.Point(163, 263);
+            this.lnkHomepage.Location = new System.Drawing.Point(171, 263);
             this.lnkHomepage.Margin = new System.Windows.Forms.Padding(3);
             this.lnkHomepage.Name = "lnkHomepage";
-            this.lnkHomepage.Size = new System.Drawing.Size(225, 15);
+            this.lnkHomepage.Size = new System.Drawing.Size(162, 15);
             this.lnkHomepage.TabIndex = 4;
             this.lnkHomepage.TabStop = true;
-            this.lnkHomepage.Text = "raymai97.github.io/Win10ThemeRevealer";
+            this.lnkHomepage.Text = "https://github.com/angelkyo";
             this.lnkHomepage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkHomepage_LinkClicked);
             // 
             // Form1
@@ -157,7 +157,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Win10 Theme Revealer";
+            this.Text = "Windows 10 主题显示";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
